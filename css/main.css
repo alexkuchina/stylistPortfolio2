@@ -1,0 +1,70 @@
+/* animation */
+
+div#frontImage img:nth-of-type(4) {
+  animation: xfade 16s 0s infinite;
+}
+div#frontImage img:nth-of-type(3) {
+  animation: xfade 16s 4s infinite;
+}
+div#frontImage img:nth-of-type(2) {
+  animation: xfade 16s 8s infinite;
+}
+div#frontImage img:nth-of-type(1) {
+  animation: xfade 16s 12s infinite;
+}
+@keyframes xfade{
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+}
+
+
+/*------------------------------------*/
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#frontImage img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+
+}
+
+#imgTwo {
+	z-index: -1;
+}
+
+#imgThree {
+	z-index: -2;
+}
+
+#imgFour {
+	z-index: -3;
+}
+
+/*#frontImg {
+	background-image: url(../img/front.png);
+	background-size: cover;
+	width: 50%;
+	height:100vh;
+	display: inline-block;
+}*/
+
+#services {
+	display: inline-block;
+}
+
+ul {
+	list-style: none;
+}
